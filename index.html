@@ -3,23 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Sand Lily | Map </title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js"></script>
 </head>
+
 <body>
-    
-    <h1> Sand Lily </h1>
-
-    <div class="page"> 
          
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eius accusantium 
-                placeat saepe modi, veniam libero repudiandae a, earum accusamus voluptates facere, 
-                adipisci distinctio non! Tenetur officia deleniti consectetur ab.
+        <div id="Map-Layer"> 
+            <div id="map"></div> 
+        </div>
+        
+        <div id="Page"> 
+            <h1>Sand Lily | Harita</h1>
+            <hr>
+            <button onclick="canlilar()">Canlılar</button> <button onclick="tarihialanlar()">Tarihi Alanlar</button> <button onclick="dogalalanlar()">Doğal Alanlar</button> <button onclick="gecimkaynakları()">Geçim Kaynakları</button>
             </p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Commodi temporibus unde fuga illo? Eveniet asperiores 
+                incidunt odio deleniti dolores excepturi sapiente quo, 
+                at velit? Reiciendis maxime inventore cum laborum saepe.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Commodi temporibus unde fuga illo? Eveniet asperiores 
+                incidunt odio deleniti dolores excepturi sapiente quo, 
+                at velit? Reiciendis maxime inventore cum laborum saepe.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Commodi temporibus unde fuga illo? Eveniet asperiores 
+                incidunt odio deleniti dolores excepturi sapiente quo, 
+                at velit? Reiciendis maxime inventore cum laborum saepe.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Commodi temporibus unde fuga illo? Eveniet asperiores 
+                incidunt odio deleniti dolores excepturi sapiente quo, 
+                at velit? Reiciendis maxime inventore cum laborum saepe.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Commodi temporibus unde fuga illo? Eveniet asperiores 
+                incidunt odio deleniti dolores excepturi sapiente quo, 
+                at velit? Reiciendis maxime inventore cum laborum saepe.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Commodi temporibus unde fuga illo? Eveniet asperiores 
+                incidunt odio deleniti dolores excepturi sapiente quo, 
+                at velit? Reiciendis maxime inventore cum laborum saepe.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Commodi temporibus unde fuga illo? Eveniet asperiores 
+                incidunt odio deleniti dolores excepturi sapiente quo, 
+                at velit? Reiciendis maxime inventore cum laborum saepe.
+                Commodi temporibus unde fuga illo? Eveniet asperiores 
+                incidunt odio deleniti dolores excepturi sapiente quo, 
+                at velit? Reiciendis maxime inventore cum laborum saepe.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Commodi temporibus unde fuga illo? Eveniet asperiores 
+                incidunt odio deleniti dolores excepturi sapiente quo, 
+                at velit? Reiciendis maxime inventore cum laborum saepe.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Commodi temporibus unde fuga illo? Eveniet asperiores 
+                incidunt odio deleniti dolores excepturi sapiente quo, 
+                at velit? Reiciendis maxime inventore cum laborum saepe.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Commodi temporibus unde fuga illo? Eveniet asperiores 
+                incidunt odio deleniti dolores excepturi sapiente quo, 
+                at velit? Reiciendis maxime inventore cum laborum saepe.
+                incidunt odio deleniti dolores excepturi sapiente quo, 
+                at velit? Reiciendis maxime inventore cum laborum saepe.
 
-        <iframe src="Map.html" width="700" height="600" style="border: 5px;;" allowfullscreen="" 
-        referrerpolicy="no-referrer-when-downgrade" frameborder="0" scrolling="no"></iframe>
-    
-    </div>
+            </p>
+        </div>
+
 </body>
 </html>
+
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+    var map = L.map('map').setView([4, 4], 4);
+
+    var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'})
+    osm.addTo(map);
+    
+    var marker = L.marker([36.7962442230, 28.6150575525]).addTo(map);
+    var circle = L.circle([36.7962442230, 28.6150575525], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 500
+    }).addTo(map);
+    marker.bindPopup("<b>Caretta Caretta</b><br>Caretta Caretta").openPopup();
+
+    var marker = L.marker([36.9577358614, 28.7039494341]).addTo(map);
+    var circle = L.circle([36.9577358614, 28.7039494341], {
+    color: 'green',
+    fillColor: 'green',
+    fillOpacity: 0.5,
+    radius: 500
+    }).addTo(map);
+    marker.bindPopup("<b>test</b><br>test").openPopup();
+
+    var marker = L.marker([35.9577358614, 44.70394943411]).addTo(map);
+    var circle = L.circle([35.9577358614, 44.70394943411], {
+    color: 'blue',
+    fillColor: 'blue',
+    fillOpacity: 0.5,
+    radius: 500
+    }).addTo(map);
+    marker.bindPopup("<b>Sığla Ağacı</b><br>Liquidambar Orientalis").openPopup();
+
+
+</script>
