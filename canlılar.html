@@ -18,7 +18,21 @@
         <div id="Page"> 
             <h1>Sand Lily | Harita</h1>
             <hr>
+            <a href="canlılar.html">
+                <button>Canlılar</button>
 
+            </a>
+            <a href="dogal.html">
+                <button>Doğal Alanlar</button>
+            </a>
+            <a href="gecim.html">
+                <button>Geçim Kaynakları</button>
+            </a>
+            <a href="tarih.html">
+                <button>Tarihi Alanlar</button>
+            </a><a href="index.html">
+                <button>Reset</button>
+            </a>
             </p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Commodi temporibus unde fuga illo? Eveniet asperiores 
@@ -83,5 +97,78 @@
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'})
     osm.addTo(map);
     
+    var marker = L.marker([36.7962442230, 28.6150575525]).addTo(map);
+    var circle = L.circle([36.7962442230, 28.6150575525], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 500
+    }).addTo(map);
+    marker.bindPopup("<b>Caretta Caretta</b><br>Caretta Caretta").openPopup();
+
+    var marker = L.marker([36.9577358614, 28.7039494341]).addTo(map);
+    var circle = L.circle([36.9577358614, 28.7039494341], {
+    color: 'green',
+    fillColor: 'green',
+    fillOpacity: 0.5,
+    radius: 500
+    }).addTo(map);
+    marker.bindPopup("<b>Sığla Ağacı</b><br>Liquidambar Orientalis").openPopup();
+
+   
+    var marker = L.marker([36.548, 29.11900]).addTo(map);
+    var circle = L.circle([36.548, 29.11900], {
+    color: 'red',
+    fillColor: 'red',
+    fillOpacity: 0.5,
+    radius: 500
+    }).addTo(map);
+    marker.bindPopup("<b>Caretta Caretta</b><br>Caretta Caretta").openPopup();
+    //36.7075, 28.72056
+    var marker = L.marker([36.706, 28.710]).addTo(map);
+    var circle = L.circle([36.7060, 28.710], {
+    color: 'pink',
+    fillColor: 'pink',
+    fillOpacity: 0.5,
+    radius: 500
+    }).addTo(map);
+    marker.bindPopup("<b>Kum Zambağı</b><br>Pancratium Maritimum").openPopup();
+    //36.7962442230, 28.6150575525
+    var marker = L.marker([36.780, 28.6150]).addTo(map);
+    var circle = L.circle([36.780, 28.6150], {
+    color: 'blue',
+    fillColor: 'blue',
+    fillOpacity: 0.5,
+    radius: 500
+    }).addTo(map);
+    marker.bindPopup("<b>Kefal</b><br>Mugil Cephalus").openPopup();
+
+    var marker = L.marker([36.805, 28.620]).addTo(map);
+    var circle = L.circle([36.805, 28.620], {
+    color: 'blue',
+    fillColor: 'blue',
+    fillOpacity: 0.5,
+    radius: 500
+    }).addTo(map);
+    marker.bindPopup("<b>Kefal</b><br>Mugil Cephalus").openPopup();
+    //36.8783, 28.7028
+    var marker = L.marker([36.900, 28.650]).addTo(map);
+    var circle = L.circle([36.900, 28.650], {
+    color: 'blue',
+    fillColor: 'blue',
+    fillOpacity: 0.5,
+    radius: 500
+    }).addTo(map);
+    marker.bindPopup("<b>Kefal</b><br>Mugil Cephalus").openPopup();
+
+    var marker = L.marker([36.777, 28.630]).addTo(map);
+    var circle = L.circle([36.777, 28.630], {
+    color: 'purple',
+    fillColor: 'purple',
+    fillOpacity: 0.5,
+    radius: 500
+    }).addTo(map);
+    marker.bindPopup("<b>Deniz Börülcesi</b><br>Salicornia Herbacea").openPopup();
+
 
 </script>

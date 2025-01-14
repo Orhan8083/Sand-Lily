@@ -18,7 +18,20 @@
         <div id="Page"> 
             <h1>Sand Lily | Harita</h1>
             <hr>
-
+            <a href="canlılar.html">
+                <button>Canlılar</button>
+            </a>
+            <a href="dogal.html">
+                <button>Doğal Alanlar</button>
+            </a>
+            <a href="gecim.html">
+                <button>Geçim Kaynakları</button>
+            </a>
+            <a href="tarih.html">
+                <button>Tarihi Alanlar</button>
+            </a><a href="index.html">
+                <button>Reset</button>
+            </a>
             </p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Commodi temporibus unde fuga illo? Eveniet asperiores 
@@ -83,5 +96,59 @@
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'})
     osm.addTo(map);
     
+    var marker = L.marker([36.825, 28.626]).addTo(map);
+    var circle = L.circle([36.825, 28.626], {
+    color: 'orange',
+    fillColor: 'orange',
+    fillOpacity: 0.5,
+    radius: 500
+    }).addTo(map);
+    marker.bindPopup("<b>Kaunos Antik Kenti</b><br>Kaunos").openPopup();
+    //36.5783,  27.2750
+    var marker = L.marker([36.68777, 27.37417]).addTo(map);
+    var circle = L.circle([36.68777, 27.37417], {
+    color: 'orange',
+    fillColor: 'orange',
+    fillOpacity: 0.5,
+    radius: 500
+    }).addTo(map);
+    marker.bindPopup("<b>Knidos Antik Kenti</b><br>Knidos").openPopup();
+
+    var marker = L.marker([37.37834, 28.04111]).addTo(map);
+    var circle = L.circle([37.37834, 28.04111], {
+    color: 'orange',
+    fillColor: 'orange',
+    fillOpacity: 0.5,
+    radius: 500
+    }).addTo(map);
+    marker.bindPopup("<b>Lagina Antik Kenti</b><br>Lagina").openPopup();
+
+    var marker = L.marker([36.33195, 29.29083]).addTo(map);
+    var circle = L.circle([36.33195, 29.29083], {
+    color: 'orange',
+    fillColor: 'orange',
+    fillOpacity: 0.5,
+    radius: 500
+    }).addTo(map);
+    marker.bindPopup("<b>Letoon Kutsal Alanı</b><br>Letoon").openPopup();
+
+    var marker = L.marker([37.31361, 28.06583]).addTo(map);
+    var circle = L.circle([37.31361, 28.06583], {
+    color: 'orange',
+    fillColor: 'orange',
+    fillOpacity: 0.5,
+    radius: 500
+    }).addTo(map);
+    marker.bindPopup("<b>Stratonikeia Antik Kenti</b><br>Stratonikeia").openPopup();
+
+    var marker = L.marker([36.55417, 29.42250]).addTo(map);
+    var circle = L.circle([36.55417, 29.42250], {
+    color: 'orange',
+    fillColor: 'orange',
+    fillOpacity: 0.5,
+    radius: 500
+    }).addTo(map);
+    marker.bindPopup("<b>Tlos Kutsal Alanı</b><br>Tlos").openPopup();
+
 
 </script>
