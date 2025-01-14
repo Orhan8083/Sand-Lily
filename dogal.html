@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sand Lily | Map </title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+         
+        <div id="Map-Layer"> 
+            <div id="map"></div> 
+        </div>
+        
+        <div id="Page"> 
+            <h1>Sand Lily | Harita</h1>
+            <hr>
+            <a href="canlılar.html">
+                <button>Canlılar</button>
+            </a>
+            <a href="dogal.html">
+                <button>Doğal Alanlar</button>
+            </a>
+            <a href="gecim.html">
+                <button>Geçim Kaynakları</button>
+            </a>
+            <a href="tarih.html">
+                <button>Tarihi Alanlar</button>
+            </a><a href="index.html">
+                <button>Reset</button>
+            </a>
+            </p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Commodi temporibus unde fuga illo? Eveniet asperiores 
+                incidunt odio deleniti dolores excepturi sapiente quo, 
+                at velit? Reiciendis maxime inventore cum laborum saepe.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Commodi temporibus unde fuga illo? Eveniet asperiores 
+                incidunt odio deleniti dolores excepturi sapiente quo, 
+                at velit? Reiciendis maxime inventore cum laborum saepe.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Commodi temporibus unde fuga illo? Eveniet asperiores 
+                incidunt odio deleniti dolores excepturi sapiente quo, 
+                at velit? Reiciendis maxime inventore cum laborum saepe.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Commodi temporibus unde fuga illo? Eveniet asperiores 
+                incidunt odio deleniti dolores excepturi sapiente quo, 
+                at velit? Reiciendis maxime inventore cum laborum saepe.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Commodi temporibus unde fuga illo? Eveniet asperiores 
+                incidunt odio deleniti dolores excepturi sapiente quo, 
+                at velit? Reiciendis maxime inventore cum laborum saepe.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Commodi temporibus unde fuga illo? Eveniet asperiores 
+                incidunt odio deleniti dolores excepturi sapiente quo, 
+                at velit? Reiciendis maxime inventore cum laborum saepe.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Commodi temporibus unde fuga illo? Eveniet asperiores 
+                incidunt odio deleniti dolores excepturi sapiente quo, 
+                at velit? Reiciendis maxime inventore cum laborum saepe.
+                Commodi temporibus unde fuga illo? Eveniet asperiores 
+                incidunt odio deleniti dolores excepturi sapiente quo, 
+                at velit? Reiciendis maxime inventore cum laborum saepe.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Commodi temporibus unde fuga illo? Eveniet asperiores 
+                incidunt odio deleniti dolores excepturi sapiente quo, 
+                at velit? Reiciendis maxime inventore cum laborum saepe.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Commodi temporibus unde fuga illo? Eveniet asperiores 
+                incidunt odio deleniti dolores excepturi sapiente quo, 
+                at velit? Reiciendis maxime inventore cum laborum saepe.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Commodi temporibus unde fuga illo? Eveniet asperiores 
+                incidunt odio deleniti dolores excepturi sapiente quo, 
+                at velit? Reiciendis maxime inventore cum laborum saepe.
+                incidunt odio deleniti dolores excepturi sapiente quo, 
+                at velit? Reiciendis maxime inventore cum laborum saepe.
+
+            </p>
+        </div>
+
+</body>
+</html>
+
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+    var map = L.map('map').setView([4, 4], 4);
+
+    var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'})
+    osm.addTo(map);
+    
+    var marker = L.marker([36.47445, 29.40444]).addTo(map);
+    var circle = L.circle([36.47445, 29.40444], {
+    color: 'green',
+    fillColor: 'green',
+    fillOpacity: 0.5,
+    radius: 500
+    }).addTo(map);
+    marker.bindPopup("<b>Saklıkent Kanyonu</b><br>Seydikemer").openPopup();
+
+    var marker = L.marker([36.54111, 29.03278]).addTo(map);
+    var circle = L.circle([36.54111, 29.03278], {
+    color: 'green',
+    fillColor: 'green',
+    fillOpacity: 0.5,
+    radius: 500
+    }).addTo(map);
+    marker.bindPopup("<b>Mavi Mağara</b><br>Fethiye").openPopup();
+
+    var marker = L.marker([37.18833, 27.61389]).addTo(map);
+    var circle = L.circle([37.18833, 27.61389], {
+    color: 'green',
+    fillColor: 'green',
+    fillOpacity: 0.5,
+    radius: 500
+    }).addTo(map);
+    marker.bindPopup("<b>Metruk Tuzlası</b><br>Milas").openPopup();
+
+    var marker = L.marker([36.72611, 28.81556]).addTo(map);
+    var circle = L.circle([36.72611, 28.81556], {
+    color: 'green',
+    fillColor: 'green',
+    fillOpacity: 0.5,
+    radius: 500
+    }).addTo(map);
+    marker.bindPopup("<b>Dalaman Kükürt Kaplıcaları</b><br>Dalaman").openPopup();
+
+    var marker = L.marker([37.05167, 28.329]).addTo(map);
+    var circle = L.circle([37.05167, 28.329], {
+    color: 'green',
+    fillColor: 'green',
+    fillOpacity: 0.5,
+    radius: 500
+    }).addTo(map);
+    marker.bindPopup("<b>Azmak Çayı</b><br>Akyaka").openPopup();
+</script>
